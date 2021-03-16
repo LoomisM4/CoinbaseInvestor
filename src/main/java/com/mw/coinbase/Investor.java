@@ -43,7 +43,7 @@ public class Investor implements Runnable {
             });
 
             try {
-                this.wait(Time.HOUR);
+                Thread.sleep(Time.HOUR);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
